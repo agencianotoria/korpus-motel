@@ -1,10 +1,7 @@
-# Ignorar a pasta pesada do Node.js (Obrigatório)
 node_modules/
 
-# Ignorar logs de erro do terminal (Limpeza)
 npm-debug.log*
 *.log
 
-# Ignorar arquivos de sistema do Windows/Mac
 .DS_Store
 Thumbs.db
