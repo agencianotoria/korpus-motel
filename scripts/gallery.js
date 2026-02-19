@@ -1,0 +1,132 @@
+const galleryData = {
+    clima: [
+        "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=1200"
+    ],
+    prime: [
+        "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1616627561950-9f84dc2b224d?auto=format&fit=crop&q=80&w=1200"
+    ],
+    acqua: [
+        "https://images.unsplash.com/photo-1616627561950-9f84dc2b224d?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1542314831-c6a4d14d8628?auto=format&fit=crop&q=80&w=1200"
+    ],
+    arabe: [
+        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=80&w=1200"
+    ],
+    absolut: [
+        "https://images.unsplash.com/photo-1542314831-c6a4d14d8628?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&q=80&w=1200"
+    ],
+    korpus: [
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=1200"
+    ]
+};
+
+const triggers = document.querySelectorAll('.gallery-trigger');
+const modal = document.getElementById('gallery-modal');
+const closeBtn = document.getElementById('close-gallery');
+const nextBtn = document.getElementById('next-gallery');
+const prevBtn = document.getElementById('prev-gallery');
+const mainImage = document.getElementById('gallery-image');
+const counterCurrent = document.getElementById('gallery-counter');
+const counterTotal = document.getElementById('gallery-total');
+const loader = document.getElementById('gallery-loader');
+
+let currentSuite = '';
+let currentIndex = 0;
+
+function openGallery(suite) {
+    currentSuite = suite;
+    currentIndex = 0;
+    
+    counterTotal.textContent = galleryData[currentSuite].length;
+    
+    document.body.style.overflow = 'hidden';
+    modal.classList.remove('hidden');
+    
+    requestAnimationFrame(() => {
+        modal.classList.remove('opacity-0');
+    });
+
+    // Passamos 'true' para avisar que é a primeira foto ao abrir, assim não há atraso
+    loadImage(true); 
+}
+
+function closeGallery() {
+    modal.classList.add('opacity-0');
+    
+    setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+        mainImage.src = '';
+    }, 300);
+}
+
+function loadImage(isInitialLoad = false) {
+    // 1. Apaga a imagem atual
+    mainImage.classList.add('opacity-0');
+    
+    if (!isInitialLoad) {
+        loader.classList.remove('hidden');
+    }
+    
+    counterCurrent.textContent = currentIndex + 1;
+
+    // 2. Define o tempo de espera: instantâneo se for a primeira vez, 300ms se for nas setas
+    const delay = isInitialLoad ? 0 : 300;
+
+    setTimeout(() => {
+        const img = new Image();
+        img.src = galleryData[currentSuite][currentIndex];
+        
+        img.onload = () => {
+            mainImage.src = img.src;
+            if (!isInitialLoad) {
+                loader.classList.add('hidden');
+            }
+            
+            // 3. Dá uma micro pausa pro navegador renderizar a nova foto e faz o fade-in suave
+            setTimeout(() => {
+                mainImage.classList.remove('opacity-0');
+            }, 50);
+        };
+    }, delay);
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % galleryData[currentSuite].length;
+    loadImage(false);
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + galleryData[currentSuite].length) % galleryData[currentSuite].length;
+    loadImage(false);
+}
+
+triggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        const suite = trigger.getAttribute('data-suite');
+        if (galleryData[suite]) {
+            openGallery(suite);
+        }
+    });
+});
+
+closeBtn.addEventListener('click', closeGallery);
+nextBtn.addEventListener('click', nextImage);
+prevBtn.addEventListener('click', prevImage);
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeGallery();
+});
+
+document.addEventListener('keydown', (e) => {
+    if (!modal.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeGallery();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+    }
+});
