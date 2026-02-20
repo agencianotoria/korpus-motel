@@ -9,14 +9,13 @@ const galleryData = {
         "/assets/imagens/galeria/clima/MOTEL KORPUS-4764.webp"
     ],
     prime: [
-        "/assets/imagens/galeria/prime/MOTEL KORPUS-2-3.webp",
-        "/assets/imagens/galeria/prime/MOTEL KORPUS-2-16.webp",
-        "/assets/imagens/galeria/prime/MOTEL KORPUS-2-22.webp",
-        "/assets/imagens/galeria/prime/MOTEL KORPUS-2-27.webp",
-        "/assets/imagens/galeria/prime/MOTEL KORPUS-2-36.webp",
-        "/assets/imagens/galeria/prime/MOTEL KORPUS-2-41.webp",
-        "/assets/imagens/galeria/prime/MOTEL KORPUS-2-48.webp",
-        "/assets/imagens/galeria/prime/MOTEL KORPUS-2-54.webp"
+        "/assets/imagens/galeria/prime/IMG_8251.webp",
+        "/assets/imagens/galeria/prime/IMG_8254.webp",
+        "/assets/imagens/galeria/prime/IMG_8258.webp",
+        "/assets/imagens/galeria/prime/IMG_8256.webp",
+        "/assets/imagens/galeria/prime/IMG_8259.webp",
+        "/assets/imagens/galeria/prime/IMG_8262.webp",
+        "/assets/imagens/galeria/prime/IMG_8265.webp"
     ],
     acqua: [
         "/assets/imagens/galeria/acqua/MOTEL KORPUS-2-3.webp",
@@ -39,24 +38,31 @@ const galleryData = {
         "/assets/imagens/galeria/arabe/MOTEL KORPUS-2-25.webp"
     ],
     absolut: [
-        "/assets/imagens/galeria/absolut/MOTEL KORPUS-2-30.webp",
-        "/assets/imagens/galeria/absolut/MOTEL KORPUS-2-32.webp",
-        "/assets/imagens/galeria/absolut/MOTEL KORPUS-2-34.webp",
-        "/assets/imagens/galeria/absolut/MOTEL KORPUS-2.webp",
-        "/assets/imagens/galeria/absolut/MOTEL KORPUS-2-11.webp",
-        "/assets/imagens/galeria/absolut/MOTEL KORPUS-2-19.webp",
-        "/assets/imagens/galeria/absolut/MOTEL KORPUS-2-23.webp",
-        "/assets/imagens/galeria/absolut/MOTEL KORPUS-2-25.webp"
+        "/assets/imagens/galeria/absolut/IMG_8300.webp",
+        "/assets/imagens/galeria/absolut/IMG_8302.webp",
+        "/assets/imagens/galeria/absolut/IMG_8304.webp",
+        "/assets/imagens/galeria/absolut/IMG_8310.webp",
+        "/assets/imagens/galeria/absolut/IMG_8299.webp",
+        "/assets/imagens/galeria/absolut/IMG_8290.webp",
+        "/assets/imagens/galeria/absolut/IMG_8286.webp",
+        "/assets/imagens/galeria/absolut/IMG_8282.webp",
+        "/assets/imagens/galeria/absolut/IMG_8316.webp",
+        "/assets/imagens/galeria/absolut/IMG_8320.webp",
+        "/assets/imagens/galeria/absolut/IMG_8325.webp"
     ],
     korpus: [
-        "/assets/imagens/galeria/korpus/MOTEL KORPUS-2-30.webp",
-        "/assets/imagens/galeria/korpus/MOTEL KORPUS-2-32.webp",
-        "/assets/imagens/galeria/korpus/MOTEL KORPUS-2-34.webp",
-        "/assets/imagens/galeria/korpus/MOTEL KORPUS-2.webp",
-        "/assets/imagens/galeria/korpus/MOTEL KORPUS-2-11.webp",
-        "/assets/imagens/galeria/korpus/MOTEL KORPUS-2-19.webp",
-        "/assets/imagens/galeria/korpus/MOTEL KORPUS-2-23.webp",
-        "/assets/imagens/galeria/korpus/MOTEL KORPUS-2-25.webp"
+        "/assets/imagens/galeria/korpus/IMG_8179.webp",
+        "/assets/imagens/galeria/korpus/IMG_8184.webp",
+        "/assets/imagens/galeria/korpus/IMG_8187.webp",
+        "/assets/imagens/galeria/korpus/IMG_8191.webp",
+        "/assets/imagens/galeria/korpus/IMG_8195.webp",
+        "/assets/imagens/galeria/korpus/IMG_8209.webp",
+        "/assets/imagens/galeria/korpus/IMG_8214.webp",
+        "/assets/imagens/galeria/korpus/IMG_8224.webp",
+        "/assets/imagens/galeria/korpus/IMG_8234.webp",
+        "/assets/imagens/galeria/korpus/IMG_8237.webp",
+        "/assets/imagens/galeria/korpus/IMG_8242.webp",
+        "/assets/imagens/galeria/korpus/IMG_8247.webp"
     ]
 };
 
