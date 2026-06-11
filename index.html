@@ -67,7 +67,8 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8Z7CMH6" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
 
-    <header class="fixed w-full top-0 z-50 glass-nav transition-all duration-500 h-[80px]" id="navbar">
+    <header class="fixed w-full top-0 z-50 bg-brand-gray/80 backdrop-blur-sm transition-all duration-500 h-[80px]"
+        id="navbar">
 
         <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
 
@@ -208,7 +209,7 @@
 
                 <h1
                     class="text-7xl md:text-6xl lg:text-8xl font-serif text-white mb-8 leading-none tracking-tight drop-shadow-2xl">
-                    Um <span class="italic text-brand-ruby font-normal">Prazer</span> em Conhecer
+                    Um <span class="italic text-brand-ruby font-normal">prazer</span> em conhecer
                 </h1>
 
                 <p
@@ -229,7 +230,8 @@
             </div>
 
         </section>
-        <section id="sobre" class="py-34 md:py-42 bg-brand-dark overflow-hidden relative">
+
+        <section id="sobre" class="py-24 md:py-38 bg-brand-dark overflow-hidden relative">
             <div
                 class="absolute top-0 right-0 w-1/2 h-full bg-brand-gray/30 -skew-x-12 transform translate-x-1/4 z-0 pointer-events-none">
             </div>
@@ -255,15 +257,15 @@
 
                     <div class="space-y-8 fade-in-section">
                         <h2 class="text-4xl md:text-6xl font-serif text-white leading-none">
-                            O Seu Melhor <br>
-                            <span class="text-brand-ruby italic">Segredo</span>
+                            O seu melhor <br>
+                            <span class="text-brand-ruby italic">segredo</span>
                         </h2>
-                        <p class="text-gray-400 leading-loose text-lg font-light text-justify">
+                        <p class="text-gray-400 leading-loose text-lg font-light">
                             Mais do que um lugar para passar a noite, criamos o cenário perfeito para você escapar da
                             rotina. Transformamos seus momentos íntimos em uma experiência onde o conforto, a limpeza
                             impecável e a discrição absoluta vêm sempre em primeiro lugar.
                         </p>
-                        <p class="text-gray-400 leading-loose text-lg font-light text-justify">
+                        <p class="text-gray-400 leading-loose text-lg font-light">
                             Aqui, sua única preocupação é aproveitar. Surpreenda-se com nossas suítes temáticas,
                             desfrute de uma alta gastronomia disponível a qualquer hora e acorde com um café da manhã
                             que vai fazer você querer voltar sempre.
@@ -285,90 +287,240 @@
             </div>
         </section>
 
-        <section id="suites" class="py-34 md:py-42 bg-brand-gray relative">
-            <div class="max-w-7xl mx-auto px-6">
-                <div
-                    class="text-center mb-8 fade-in-section border-b border-white/5 pb-8 flex justify-center items-center">
-                    <div>
-                        <span
-                            class="text-brand-ruby text-sm font-bold tracking-widest uppercase mb-2 block">Diferenciais</span>
-                        <h2 class="text-3xl md:text-5xl font-serif text-white">A Excelência em Detalhes</h2>
-                    </div>
+        <section id="experiencia-korpus" class="py-24 md:py-38 bg-brand-dark relative overflow-hidden fade-in-section">
+
+            <div
+                class="absolute top-0 left-0 w-1/2 h-full bg-brand-gray/10 -skew-x-12 transform -translate-x-1/4 z-0 pointer-events-none">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+
+                <div class="text-center mb-16">
+                    <span
+                        class="text-brand-ruby uppercase tracking-[0.2em] text-xs font-semibold mb-3 block">Exclusividade</span>
+                    <h2 class="text-4xl md:text-5xl font-serif text-white mb-4 leading-none">
+                        A experiência <span class="text-brand-ruby italic">Korpus</span>
+                    </h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base font-light leading-relaxed">
+                        Pensamos em cada detalhe para tornar o seu momento inesquecível. Conheça as vantagens exclusivas
+                        de escolher as nossas suítes.
+                    </p>
+                    <div class="w-16 h-[1px] bg-brand-ruby/40 mx-auto mt-6"></div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 border border-white/5 mb-32">
+                <div class="flex flex-col gap-8 lg:gap-10 w-full max-w-7xl mx-auto">
+
                     <div
-                        class="group p-10 bg-brand-gray hover:bg-brand-dark transition-colors duration-500 fade-in-section relative overflow-hidden">
-                        <div
-                            class="absolute top-0 right-0 w-20 h-20 bg-brand-ruby/5 rounded-bl-full transition-all group-hover:bg-brand-ruby/10">
+                        class="group flex flex-col md:flex-row bg-brand-dark/40 border border-white/5 hover:border-brand-ruby/30 overflow-hidden transition-all duration-500 relative shadow-2xl">
+                        <div class="md:w-5/12 h-64 md:h-80 relative overflow-hidden">
+                            <img src="/assets/imagens/cafe-da-manha.webp" alt="Café da Manhã"
+                                class="absolute inset-0 w-full h-full object-cover filter brightness-75 contrast-125 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700 ease-in-out">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-brand-dark via-brand-dark/40 to-transparent">
+                            </div>
                         </div>
-                        <div class="mb-8 text-brand-ruby">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="w-10 h-10 stroke-[1.5]">
-                                <path
-                                    d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" />
-                                <path d="M5 21h14" />
-                            </svg>
+
+                        <div class="md:w-7/12 p-8 md:p-12 flex flex-col justify-center relative">
+                            <div
+                                class="absolute top-0 right-0 w-16 h-16 bg-brand-ruby/5 rounded-bl-full transition-all group-hover:bg-brand-ruby/10 pointer-events-none">
+                            </div>
+
+                            <div class="flex items-center gap-5 mb-5 relative z-10">
+                                <div
+                                    class="text-brand-ruby bg-brand-ruby/5 w-14 h-14 flex items-center justify-center border border-brand-ruby/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-coffee">
+                                        <path d="M10 2v2" />
+                                        <path d="M14 2v2" />
+                                        <path
+                                            d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" />
+                                        <path d="M6 2v2" />
+                                    </svg>
+                                </div>
+                                <h3
+                                    class="text-2xl md:text-3xl font-serif text-white group-hover:text-brand-ruby transition-colors duration-300">
+                                    Café da manhã cortesia</h3>
+                            </div>
+
+                            <p class="text-gray-400 font-light text-sm md:text-base leading-relaxed relative z-10">
+                                Exclusividade garantida para quem escolhe o pernoite. Comece o seu dia com um café da
+                                manhã completo e delicioso, já incluso no valor da estadia.
+                            </p>
                         </div>
-                        <h3 class="text-xl font-serif text-white mb-4">26 Suítes</h3>
-                        <p class="text-gray-400 font-light leading-relaxed text-sm">
-                            Opções variadas de espaços amplos e confortáveis. Ambientes rigorosamente preparados para
-                            entregar a melhor experiência.
-                        </p>
                     </div>
 
-                    <div class="group p-10 bg-brand-gray hover:bg-brand-dark transition-colors duration-500 fade-in-section relative overflow-hidden"
-                        style="transition-delay: 100ms;">
+                    <div
+                        class="group flex flex-col md:flex-row-reverse bg-brand-dark/40 border border-white/5 hover:border-brand-ruby/30 overflow-hidden transition-all duration-500 relative shadow-2xl">
+                        <div class="md:w-5/12 h-64 md:h-80 relative overflow-hidden">
+                            <img src="/assets/imagens/pernoite-prolongado.webp" alt="Pernoite prolongado"
+                                class="absolute inset-0 w-full h-full object-cover filter brightness-75 contrast-125 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700 ease-in-out">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-brand-dark via-brand-dark/40 to-transparent">
+                            </div>
+                        </div>
+
                         <div
-                            class="absolute top-0 right-0 w-20 h-20 bg-brand-ruby/5 rounded-bl-full transition-all group-hover:bg-brand-ruby/10">
+                            class="md:w-7/12 p-8 md:p-12 flex flex-col justify-center relative items-start md:items-end text-left md:text-right">
+                            <div
+                                class="absolute top-0 left-0 w-16 h-16 bg-brand-ruby/5 rounded-br-full transition-all group-hover:bg-brand-ruby/10 pointer-events-none">
+                            </div>
+
+                            <div class="flex items-center gap-5 mb-5 relative z-10 flex-row md:flex-row-reverse">
+                                <div
+                                    class="text-brand-ruby bg-brand-ruby/5 w-14 h-14 flex items-center justify-center border border-brand-ruby/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-moon-star">
+                                        <path d="M18 5h4" />
+                                        <path d="M20 3v4" />
+                                        <path
+                                            d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+                                    </svg>
+                                </div>
+                                <h3
+                                    class="text-2xl md:text-3xl font-serif text-white group-hover:text-brand-ruby transition-colors duration-300">
+                                    Pernoite prolongado</h3>
+                            </div>
+
+                            <p
+                                class="text-gray-400 font-light text-sm md:text-base leading-relaxed relative z-10 md:text-right">
+                                Esqueça o relógio. Com nosso pernoite prolongado das 21h às 12h, você tem muito mais
+                                tempo para relaxar, aproveitar e estender o prazer da sua estadia sem nenhuma pressa.
+                            </p>
                         </div>
-                        <div class="mb-8 text-brand-ruby">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="w-10 h-10 stroke-[1.5]">
-                                <path d="M7 10h10" />
-                                <path d="M12 15v7" />
-                                <path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-serif text-white mb-4">Restaurante 24h</h3>
-                        <p class="text-gray-400 font-light leading-relaxed text-sm">
-                            Pratos especiais, almoço e jantar servidos das 6h às 22h. Durante a madrugada, aproveite
-                            nosso menu exclusivo de petiscos e lanches rápidos.
-                        </p>
                     </div>
 
-                    <div class="group p-10 bg-brand-gray hover:bg-brand-dark transition-colors duration-500 fade-in-section relative overflow-hidden"
-                        style="transition-delay: 200ms;">
-                        <div
-                            class="absolute top-0 right-0 w-20 h-20 bg-brand-ruby/5 rounded-bl-full transition-all group-hover:bg-brand-ruby/10">
+                    <div
+                        class="group flex flex-col md:flex-row bg-brand-dark/40 border border-white/5 hover:border-brand-ruby/30 overflow-hidden transition-all duration-500 relative shadow-2xl">
+                        <div class="md:w-5/12 h-64 md:h-80 relative overflow-hidden">
+                            <img src="/assets/imagens/cartao-fidelidade.webp" alt="Cartão Fidelidade"
+                                class="absolute inset-0 w-full h-full object-cover filter brightness-75 contrast-125 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700 ease-in-out">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-brand-dark via-brand-dark/40 to-transparent">
+                            </div>
                         </div>
-                        <div class="mb-8 text-brand-ruby">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="w-10 h-10 stroke-[1.5]">
-                                <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
-                                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
-                                <line x1="6" y1="2" x2="6" y2="4" />
-                                <line x1="10" y1="2" x2="10" y2="4" />
-                                <line x1="14" y1="2" x2="14" y2="4" />
-                            </svg>
+
+                        <div class="md:w-7/12 p-8 md:p-12 flex flex-col justify-center relative">
+                            <div
+                                class="absolute top-0 right-0 w-16 h-16 bg-brand-ruby/5 rounded-bl-full transition-all group-hover:bg-brand-ruby/10 pointer-events-none">
+                            </div>
+
+                            <div class="flex items-center gap-5 mb-5 relative z-10">
+                                <div
+                                    class="text-brand-ruby bg-brand-ruby/5 w-14 h-14 flex items-center justify-center border border-brand-ruby/10 relative">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-award">
+                                        <path
+                                            d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                                        <circle cx="12" cy="8" r="6" />
+                                    </svg>
+                                </div>
+                                <h3
+                                    class="text-2xl md:text-3xl font-serif text-white group-hover:text-brand-ruby transition-colors duration-300">
+                                    Cartão fidelidade</h3>
+                            </div>
+
+                            <p class="text-gray-400 font-light text-sm md:text-base leading-relaxed relative z-10">
+                                Sua preferência sempre recompensada. Após 10 hospedagens ganhe uma cortesia nas suítes
+                                Prime ou Clima, ou 50% de desconto nas suítes especiais.
+                            </p>
                         </div>
-                        <h3 class="text-xl font-serif text-white mb-4">Café da Manhã</h3>
-                        <p class="text-gray-400 font-light leading-relaxed text-sm">
-                            Exclusividade garantida para quem escolhe o pernoite. Comece o seu dia com um café da manhã
-                            completo e delicioso, já incluso no valor da estadia.
-                        </p>
                     </div>
-                    <div id="tarifas"></div>
+
+                    <div
+                        class="group flex flex-col md:flex-row-reverse bg-brand-dark/40 border border-white/5 hover:border-brand-ruby/30 overflow-hidden transition-all duration-500 relative shadow-2xl">
+                        <div class="md:w-5/12 h-64 md:h-80 relative overflow-hidden">
+                            <img src="/assets/imagens/restaurante-24h.webp" alt="26 Suítes"
+                                class="absolute inset-0 w-full h-full object-cover filter brightness-75 contrast-125 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700 ease-in-out">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-brand-dark via-brand-dark/40 to-transparent">
+                            </div>
+                        </div>
+
+                        <div
+                            class="md:w-7/12 p-8 md:p-12 flex flex-col justify-center relative items-start md:items-end text-left md:text-right">
+                            <div
+                                class="absolute top-0 left-0 w-16 h-16 bg-brand-ruby/5 rounded-br-full transition-all group-hover:bg-brand-ruby/10 pointer-events-none">
+                            </div>
+
+                            <div class="flex items-center gap-5 mb-5 relative z-10 flex-row md:flex-row-reverse">
+                                <div
+                                    class="text-brand-ruby bg-brand-ruby/5 w-14 h-14 flex items-center justify-center border border-brand-ruby/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-wine">
+                                        <path d="M8 22h8" />
+                                        <path d="M7 10h10" />
+                                        <path d="M12 15v7" />
+                                        <path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z" />
+                                    </svg>
+                                </div>
+                                <h3
+                                    class="text-2xl md:text-3xl font-serif text-white group-hover:text-brand-ruby transition-colors duration-300">
+                                    Restaurante 24h</h3>
+                            </div>
+
+                            <p
+                                class="text-gray-400 font-light text-sm md:text-base leading-relaxed relative z-10 md:text-right">
+                                Pratos especiais, almoço e jantar servidos das 6h às 22h. Durante a madrugada, aproveite
+                                nosso menu exclusivo de petiscos e lanches rápidos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group flex flex-col md:flex-row bg-brand-dark/40 border border-white/5 hover:border-brand-ruby/30 overflow-hidden transition-all duration-500 relative shadow-2xl">
+                        <div class="md:w-5/12 h-64 md:h-80 relative overflow-hidden">
+                            <img src="/assets/imagens/banner-01.webp" alt="Restaurante 24h"
+                                class="absolute inset-0 w-full h-full object-cover filter brightness-75 contrast-125 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700 ease-in-out">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-brand-dark via-brand-dark/40 to-transparent">
+                            </div>
+                        </div>
+
+                        <div class="md:w-7/12 p-8 md:p-12 flex flex-col justify-center relative">
+                            <div
+                                class="absolute top-0 right-0 w-16 h-16 bg-brand-ruby/5 rounded-bl-full transition-all group-hover:bg-brand-ruby/10 pointer-events-none">
+                            </div>
+
+                            <div class="flex items-center gap-5 mb-5 relative z-10">
+                                <div
+                                    class="text-brand-ruby bg-brand-ruby/5 w-14 h-14 flex items-center justify-center border border-brand-ruby/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-crown">
+                                        <path
+                                            d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" />
+                                        <path d="M5 21h14" />
+                                    </svg>
+                                </div>
+                                <h3
+                                    class="text-2xl md:text-3xl font-serif text-white group-hover:text-brand-ruby transition-colors duration-300">
+                                    26 suítes</h3>
+                            </div>
+
+                            <p class="text-gray-400 font-light text-sm md:text-base leading-relaxed relative z-10">
+                                Opções variadas de espaços amplos e confortáveis. Ambientes rigorosamente preparados
+                                para entregar a melhor experiência.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="fade-in-section pt-10">
+        <div id="tarifas"></div>
+
+        <section id="suites" class="py-24 md:py-38 bg-brand-gray relative">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="fade-in-section">
                     <div class="text-center mb-16">
                         <span class="text-brand-ruby text-sm font-bold tracking-[0.2em] uppercase mb-4 block">Tarifas &
                             Períodos</span>
-                        <h3 class="text-4xl md:text-5xl font-serif text-white">Escolha o seu Momento</h3>
+                        <h3 class="text-4xl md:text-5xl font-serif text-white">Escolha o seu momento</h3>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -410,12 +562,12 @@
                                 </div>
                                 <div class="w-full border-b border-white/10"></div>
                             </div>
-                            <div class="flex flex-col items-start gap-y-2 text-xs text-gray-400 flex-1">
+                            <div class="flex flex-col items-start gap-y-2 text-sm text-gray-400 flex-1">
 
-                                <span>• Ambiente Aconchegante</span>
-                                <span>• Garagem Privativa</span>
-                                <span>• Ar Condicionado</span>
-                                <span>• TV Smart 43 Polegadas</span>
+                                <span>• Ambiente aconchegante</span>
+                                <span>• Garagem privativa</span>
+                                <span>• Ar condicionado</span>
+                                <span>• TV Smart 43 polegadas</span>
                                 <span>• Frigobar</span>
                             </div>
                         </div>
@@ -457,11 +609,11 @@
                                 </div>
                                 <div class="w-full border-b border-white/10"></div>
                             </div>
-                            <div class="flex flex-col items-start gap-y-2 text-xs text-gray-400 flex-1">
-                                <span>• Ambiente Aconchegante</span>
-                                <span>• Garagem Privativa</span>
-                                <span>• Ar Condicionado</span>
-                                <span>• TV Smart 43 Polegadas</span>
+                            <div class="flex flex-col items-start gap-y-2 text-sm text-gray-400 flex-1">
+                                <span>• Ambiente aconchegante</span>
+                                <span>• Garagem privativa</span>
+                                <span>• Ar condicionado</span>
+                                <span>• TV Smart 43 polegadas</span>
                                 <span>• Frigobar</span>
                             </div>
                         </div>
@@ -501,14 +653,14 @@
                                 </div>
                                 <div class="w-full border-b border-white/10"></div>
                             </div>
-                            <div class="flex flex-col items-start gap-y-2 text-xs text-gray-400 flex-1">
-                                <span>• Ambiente Aconchegante</span>
-                                <span>• Garagem Privativa</span>
-                                <span>• Decoração Exclusiva</span>
-                                <span>• Iluminação Especial</span>
-                                <span>• Ar Condicionado</span>
-                                <span>• TV Smart 43 Polegadas</span>
-                                <span>• Piscina Climatizada</span>
+                            <div class="flex flex-col items-start gap-y-2 text-sm text-gray-400 flex-1">
+                                <span>• Ambiente aconchegante</span>
+                                <span>• Garagem privativa</span>
+                                <span>• Decoração exclusiva</span>
+                                <span>• Iluminação especial</span>
+                                <span>• Ar condicionado</span>
+                                <span>• TV Smart 43 polegadas</span>
+                                <span>• Piscina climatizada</span>
                                 <span>• Frigobar</span>
                             </div>
                         </div>
@@ -550,13 +702,13 @@
                                 <div class="w-full border-b border-white/10"></div>
                             </div>
 
-                            <div class="flex flex-col items-start gap-y-2 text-xs text-gray-400 flex-1">
-                                <span>• Ambiente Aconchegante</span>
-                                <span>• Garagem Privativa</span>
-                                <span>• Decoração Exclusiva</span>
-                                <span>• Iluminação Especial</span>
-                                <span>• Ar Condicionado</span>
-                                <span>• TV Smart 43 Polegadas</span>
+                            <div class="flex flex-col items-start gap-y-2 text-sm text-gray-400 flex-1">
+                                <span>• Ambiente aconchegante</span>
+                                <span>• Garagem privativa</span>
+                                <span>• Decoração exclusiva</span>
+                                <span>• Iluminação especial</span>
+                                <span>• Ar condicionado</span>
+                                <span>• TV Smart 43 polegadas</span>
                                 <span>• Hidromassagem</span>
                                 <span>• Frigobar</span>
                             </div>
@@ -599,15 +751,15 @@
                                 </div>
                                 <div class="w-full border-b border-white/10"></div>
                             </div>
-                            <div class="flex flex-col items-start gap-y-2 text-xs text-gray-400 flex-1">
-                                <span>• Ambiente Aconchegante</span>
-                                <span>• Garagem Privativa</span>
-                                <span>• Suíte com 2 Andares</span>
-                                <span>• Ar Condicionado</span>
-                                <span>• TV Smart 43 Polegadas</span>
+                            <div class="flex flex-col items-start gap-y-2 text-sm text-gray-400 flex-1">
+                                <span>• Ambiente aconchegante</span>
+                                <span>• Garagem privativa</span>
+                                <span>• Suíte com 2 andares</span>
+                                <span>• Ar condicionado</span>
+                                <span>• TV Smart 43 polegadas</span>
                                 <span>• Hidromassagem</span>
                                 <span>• Frigobar</span>
-                                <span>• Ofurô Externa</span>
+                                <span>• Ofurô externa</span>
                             </div>
                         </div>
 
@@ -648,15 +800,15 @@
                                 </div>
                                 <div class="w-full border-b border-white/10"></div>
                             </div>
-                            <div class="flex flex-col items-start gap-y-2 text-xs text-gray-400 flex-1">
-                                <span>• Ambiente Aconchegante</span>
-                                <span>• Garagem Privativa</span>
-                                <span>• Suíte com 2 Andares</span>
-                                <span>• Ar Condicionado</span>
-                                <span>• TV Smart 43 Polegadas</span>
+                            <div class="flex flex-col items-start gap-y-2 text-sm text-gray-400 flex-1">
+                                <span>• Ambiente aconchegante</span>
+                                <span>• Garagem privativa</span>
+                                <span>• Suíte com 2 andares</span>
+                                <span>• Ar condicionado</span>
+                                <span>• TV Smart 43 polegadas</span>
                                 <span>• Hidromassagem</span>
                                 <span>• Frigobar</span>
-                                <span>• Ofurô Externa</span>
+                                <span>• Ofurô externa</span>
                             </div>
                         </div>
 
@@ -668,7 +820,7 @@
                             Não trabalhamos com reservas
                         </p>
                         <p class="text-sm color-brand-text font-bold uppercase tracking-widest">Pernoite: das 21h às
-                            12h. (Pernoites válidas com entrada até as 5h da manhã).
+                            12h. (pernoites válidas com entrada até as 5h da manhã).
                         </p>
                         <p class="text-sm text-gray-500 font-light italic">* Valores sujeitos a alteração sem aviso
                             prévio.</p>
@@ -677,12 +829,12 @@
 
         </section>
 
-        <section class="py-34 md:py-42 bg-brand-dark relative overflow-hidden" id="galeria">
+        <section class="py-24 md:py-38 bg-brand-dark relative overflow-hidden" id="galeria">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center mb-16 fade-in-section">
                     <span class="text-brand-ruby text-sm font-bold tracking-[0.2em] uppercase mb-4 block">Nossos
                         Ambientes</span>
-                    <h2 class="text-4xl md:text-5xl font-serif text-white">Galeria de Suítes</h2>
+                    <h2 class="text-4xl md:text-5xl font-serif text-white">Galeria de suítes</h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -833,12 +985,12 @@
             </div>
         </section>
 
-        <section id="localizacao" class="py-34 md:py-42 bg-brand-gray relative">
+        <section id="localizacao" class="py-24 md:py-38 bg-brand-gray relative">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center mb-16 fade-in-section">
                     <span class="text-brand-ruby text-sm font-bold tracking-[0.2em] uppercase mb-4 block">Localização
                         Privilegiada</span>
-                    <h2 class="text-4xl md:text-5xl font-serif text-white">Exclusividade e Fácil Acesso</h2>
+                    <h2 class="text-4xl md:text-5xl font-serif text-white">Exclusividade e fácil acesso</h2>
                 </div>
 
                 <div
@@ -846,7 +998,7 @@
                     <div class="p-10 md:p-14 bg-brand-dark/80 flex flex-col justify-center relative">
                         <h3
                             class="text-2xl font-serif text-white mb-10 border-b border-brand-ruby/30 pb-4 inline-block w-max">
-                            Nos Encontre Facilmente
+                            Nos encontre facilmente
                         </h3>
 
                         <p class="text-gray-400 text-lg font-light leading-relaxed mb-8">
@@ -928,7 +1080,7 @@
                                 d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
                             <circle cx="12" cy="10" r="3" />
                         </svg>
-                        <h4 class="text-white font-serif text-lg mb-2">Entrada Discreta</h4>
+                        <h4 class="text-white font-serif text-lg mb-2">Entrada discreta</h4>
                         <p class="text-gray-400 text-sm font-light">Acesso pela Rua Boquira.</p>
                     </div>
                     <div class="p-6 border border-white/5 bg-brand-dark hover:border-brand-ruby/30 transition-colors">
@@ -989,7 +1141,7 @@
                     </p>
                 </div>
 
-                <div class="flex gap-4 lg:justify-end">
+                <div class="flex gap-4 justify-center lg:justify-end">
                     <a href="https://www.instagram.com/korpusmoteloficial" target="_blank" rel="noopener noreferrer"
                         class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-brand-ruby hover:text-brand-ruby transition-colors duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1033,7 +1185,7 @@
             </div>
 
             <div
-                class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 gap-4">
+                class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 gap-1">
                 <p>© <span id="current-year"></span> Korpus Motel. Todos os direitos reservados.</p>
                 <div class="flex items-center gap-1">
                     <span>by</span>

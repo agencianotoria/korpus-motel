@@ -52,24 +52,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('h-[60px]', 'bg-brand-dark/95', 'shadow-2xl');
-            navbar.classList.remove('h-[80px]');
+    if (window.scrollY > 50) {
+        // Quando rolar para baixo: mantém o blur e aplica a cor de scroll
+        navbar.classList.add('h-[60px]', 'bg-brand-dark/80', 'backdrop-blur-sm', 'shadow-2xl');
+        navbar.classList.remove('h-[80px]', 'bg-neutral-900/80');
 
-            if (closeMenuWrapper) {
-                closeMenuWrapper.classList.add('h-[60px]');
-                closeMenuWrapper.classList.remove('h-[80px]');
-            }
-        } else {
-            navbar.classList.remove('h-[60px]', 'bg-brand-dark/95', 'shadow-2xl');
-            navbar.classList.add('h-[80px]');
-
-            if (closeMenuWrapper) {
-                closeMenuWrapper.classList.remove('h-[60px]');
-                closeMenuWrapper.classList.add('h-[80px]');
-            }
+        if (closeMenuWrapper) {
+            closeMenuWrapper.classList.add('h-[60px]');
+            closeMenuWrapper.classList.remove('h-[80px]');
         }
-    });
+    } else {
+        // Quando voltar ao topo: restaura o estado inicial do HTML
+        navbar.classList.remove('h-[60px]', 'bg-brand-dark/95', 'shadow-2xl');
+        navbar.classList.add('h-[80px]', 'bg-neutral-900/80', 'backdrop-blur-sm');
+
+        if (closeMenuWrapper) {
+            closeMenuWrapper.classList.remove('h-[60px]');
+            closeMenuWrapper.classList.add('h-[80px]');
+        }
+    }
+});
 
     const observerOptions = {
         root: null,
